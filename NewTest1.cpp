@@ -73,7 +73,7 @@ int main()
   			int b2Count = 0;
             b2Count = book2.size();
             
-  			book2[b2Count]["content"] = text;
+  	    book2[b2Count]["content"] = text;
             book2[b2Count]["id"] = parse.IntToStr(index);
             book2[b2Count]["parent"] = parse.IntToStr(parentId);
             cout << "Created" << endl;
@@ -110,24 +110,24 @@ int main()
             buff = NULL; 
             
             
-			/* string contentSource = parse.open(filename);
-			cout << contentSource;*/
-			printf("\n \nEnter command: ");
+		/* string contentSource = parse.open(filename);
+		cout << contentSource;*/
+		printf("\n \nEnter command: ");
         } else if ( cmd == "save" ) {
             int bCount = 0;
             int b2Count = 0;  
             bCount = book.size();              
             b2Count = book2.size();
             
-			//build node state
-			//save current node state to file
+		//build node state
+		//save current node state to file
 			
             string buildStringRelation("");
 
             
             for(int j = 0; j < bCount; j++) {
               buildStringRelation.append("\n");
-	          buildStringRelation.append(" ");
+	      buildStringRelation.append(" ");
               buildStringRelation.append(book[j]["id"]);
               buildStringRelation.append(" ");
               buildStringRelation.append(book[j]["content"]);
