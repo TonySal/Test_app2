@@ -26,8 +26,8 @@ int main()
 	
 	while( cin >> cmd ) {
     	if ( cmd == "add"  ) {
-			//add node to array
-			while (!success){
+		//add node to array
+		while (!success){
                   cout << "Enter id: ";
                   cin >> id;
                   if(cin.good())
